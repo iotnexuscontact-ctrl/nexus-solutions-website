@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Nexus Solutions — Géolocalisation GPS, IoT et gestion de flotte." />
+  <meta name="description" content="Nexus Solutions — Géolocalisation GPS, IoT et gestion de flotte." data-i18n-attr="content:meta.description" />
   <title>Nexus Solutions | GPS, IoT & Fleet Management</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,17 +17,23 @@
         <img src="assets/nexus-logo.svg" alt="Logo Nexus Solutions" />
       </a>
 
-      <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false" data-i18n-attr="aria-label:nav.openMenu">
         <span></span><span></span><span></span>
       </button>
 
       <nav class="main-nav">
-        <a href="#services">Services</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#avantages">Avantages</a>
-        <a href="#contact">Contact</a>
-        <a class="button button-small" href="#contact">Demander une démo</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
+        <a href="#avantages" data-i18n="nav.advantages">Avantages</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a class="button button-small" href="#contact" data-i18n="nav.demo">Demander une démo</a>
       </nav>
+
+      <div class="language-switcher" aria-label="Choisir la langue">
+        <button type="button" class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <button type="button" class="lang-btn" data-lang="ar" aria-label="العربية">AR</button>
+      </div>
     </div>
   </header>
 
@@ -36,19 +42,16 @@
       <div class="hero-grid container">
         <div class="hero-copy">
           <span class="eyebrow">GPS • IoT • Fleet Management</span>
-          <h1>Gardez le contrôle de votre flotte, partout et en temps réel.</h1>
-          <p>
-            Nexus Solutions vous aide à localiser vos véhicules, réduire les coûts,
-            renforcer la sécurité et améliorer la performance de vos équipes.
-          </p>
+          <h1 data-i18n="hero.title">Gardez le contrôle de votre flotte, partout et en temps réel.</h1>
+          <p data-i18n="hero.text">Nexus Solutions vous aide à localiser vos véhicules, réduire les coûts, renforcer la sécurité et améliorer la performance de vos équipes.</p>
           <div class="hero-actions">
-            <a class="button" href="#contact">Demander un devis</a>
-            <a class="button button-ghost" href="#services">Découvrir nos services</a>
+            <a class="button" href="#contact" data-i18n="hero.quote">Demander un devis</a>
+            <a class="button button-ghost" href="#services" data-i18n="hero.discover">Découvrir nos services</a>
           </div>
           <div class="hero-stats">
-            <div><strong>24/7</strong><span>Suivi en temps réel</span></div>
-            <div><strong>GPS</strong><span>Localisation précise</span></div>
-            <div><strong>IoT</strong><span>Données connectées</span></div>
+            <div><strong>24/7</strong><span data-i18n="hero.stat1">Suivi en temps réel</span></div>
+            <div><strong>GPS</strong><span data-i18n="hero.stat2">Localisation précise</span></div>
+            <div><strong>IoT</strong><span data-i18n="hero.stat3">Données connectées</span></div>
           </div>
         </div>
 
@@ -57,21 +60,17 @@
           <div class="signal signal-two"></div>
           <div class="dashboard-card">
             <div class="dashboard-top">
-              <span>Tableau de bord</span>
-              <span class="live"><i></i> En direct</span>
+              <span data-i18n="dashboard.title">Tableau de bord</span>
+              <span class="live"><i></i> <span data-i18n="dashboard.live">En direct</span></span>
             </div>
             <div class="map">
-              <span class="road road-a"></span>
-              <span class="road road-b"></span>
-              <span class="road road-c"></span>
-              <span class="pin pin-a"></span>
-              <span class="pin pin-b"></span>
-              <span class="pin pin-c"></span>
+              <span class="road road-a"></span><span class="road road-b"></span><span class="road road-c"></span>
+              <span class="pin pin-a"></span><span class="pin pin-b"></span><span class="pin pin-c"></span>
             </div>
             <div class="dashboard-bottom">
-              <div><span>Véhicules actifs</span><strong>18</strong></div>
-              <div><span>Alertes</span><strong>02</strong></div>
-              <div><span>Disponibilité</span><strong>96%</strong></div>
+              <div><span data-i18n="dashboard.vehicles">Véhicules actifs</span><strong>18</strong></div>
+              <div><span data-i18n="dashboard.alerts">Alertes</span><strong>02</strong></div>
+              <div><span data-i18n="dashboard.availability">Disponibilité</span><strong>96%</strong></div>
             </div>
           </div>
         </div>
@@ -81,69 +80,44 @@
     <section class="section" id="services">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">Nos services</span>
-          <h2>Une plateforme pensée pour votre activité</h2>
-          <p>Des outils simples pour suivre, sécuriser et optimiser vos opérations.</p>
+          <span class="eyebrow" data-i18n="services.eyebrow">Nos services</span>
+          <h2 data-i18n="services.title">Une plateforme pensée pour votre activité</h2>
+          <p data-i18n="services.text">Des outils simples pour suivre, sécuriser et optimiser vos opérations.</p>
         </div>
-
         <div class="cards">
-          <article class="card">
-            <div class="icon">⌖</div>
-            <h3>Géolocalisation GPS</h3>
-            <p>Position en temps réel, historique des trajets, zones géographiques et alertes personnalisées.</p>
-          </article>
-          <article class="card">
-            <div class="icon">⌁</div>
-            <h3>Gestion de flotte</h3>
-            <p>Suivi de l’utilisation, des conducteurs, de la maintenance et des performances de chaque véhicule.</p>
-          </article>
-          <article class="card">
-            <div class="icon">◎</div>
-            <h3>Solutions IoT</h3>
-            <p>Capteurs connectés, remontée de données et automatisation pour mieux piloter vos équipements.</p>
-          </article>
-          <article class="card">
-            <div class="icon">⚑</div>
-            <h3>Sécurité & alertes</h3>
-            <p>Alertes de mouvement, vitesse, sortie de zone, coupure d’alimentation et comportements à risque.</p>
-          </article>
+          <article class="card"><div class="icon">⌖</div><h3 data-i18n="services.gpsTitle">Géolocalisation GPS</h3><p data-i18n="services.gpsText">Position en temps réel, historique des trajets, zones géographiques et alertes personnalisées.</p></article>
+          <article class="card"><div class="icon">⌁</div><h3 data-i18n="services.fleetTitle">Gestion de flotte</h3><p data-i18n="services.fleetText">Suivi de l’utilisation, des conducteurs, de la maintenance et des performances de chaque véhicule.</p></article>
+          <article class="card"><div class="icon">◎</div><h3 data-i18n="services.iotTitle">Solutions IoT</h3><p data-i18n="services.iotText">Capteurs connectés, remontée de données et automatisation pour mieux piloter vos équipements.</p></article>
+          <article class="card"><div class="icon">⚑</div><h3 data-i18n="services.securityTitle">Sécurité & alertes</h3><p data-i18n="services.securityText">Alertes de mouvement, vitesse, sortie de zone, coupure d’alimentation et comportements à risque.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section section-dark" id="solutions">
       <div class="container split">
-        <div class="image-frame">
-          <img src="assets/nexus-vehicle.png" alt="Habillage d’un véhicule Nexus Solutions" />
-        </div>
+        <div class="image-frame"><img src="assets/nexus-vehicle.png" alt="Habillage d’un véhicule Nexus Solutions" data-i18n-attr="alt:solutions.imageAlt" /></div>
         <div class="split-copy">
-          <span class="eyebrow eyebrow-light">Une solution concrète</span>
-          <h2>Des données utiles pour de meilleures décisions</h2>
-          <p>
-            Visualisez vos opérations depuis un seul espace, recevez les alertes importantes
-            et transformez les données terrain en actions immédiates.
-          </p>
+          <span class="eyebrow eyebrow-light" data-i18n="solutions.eyebrow">Une solution concrète</span>
+          <h2 data-i18n="solutions.title">Des données utiles pour de meilleures décisions</h2>
+          <p data-i18n="solutions.text">Visualisez vos opérations depuis un seul espace, recevez les alertes importantes et transformez les données terrain en actions immédiates.</p>
           <ul class="check-list">
-            <li>Réduction des kilomètres inutiles</li>
-            <li>Amélioration de la sécurité des conducteurs</li>
-            <li>Planification de la maintenance</li>
-            <li>Rapports automatiques et personnalisables</li>
+            <li data-i18n="solutions.item1">Réduction des kilomètres inutiles</li>
+            <li data-i18n="solutions.item2">Amélioration de la sécurité des conducteurs</li>
+            <li data-i18n="solutions.item3">Planification de la maintenance</li>
+            <li data-i18n="solutions.item4">Rapports automatiques et personnalisables</li>
           </ul>
-          <a class="button" href="#contact">Parler à un conseiller</a>
+          <a class="button" href="#contact" data-i18n="solutions.advisor">Parler à un conseiller</a>
         </div>
       </div>
     </section>
 
     <section class="section" id="avantages">
       <div class="container">
-        <div class="section-heading">
-          <span class="eyebrow">Pourquoi Nexus</span>
-          <h2>Simple à utiliser. Facile à déployer.</h2>
-        </div>
+        <div class="section-heading"><span class="eyebrow" data-i18n="advantages.eyebrow">Pourquoi Nexus</span><h2 data-i18n="advantages.title">Simple à utiliser. Facile à déployer.</h2></div>
         <div class="benefits">
-          <div><span>01</span><h3>Vision en temps réel</h3><p>Suivez les véhicules, missions et alertes sans perdre de temps.</p></div>
-          <div><span>02</span><h3>Économies mesurables</h3><p>Réduisez le carburant, les détours et l’usure de votre flotte.</p></div>
-          <div><span>03</span><h3>Support de proximité</h3><p>Un accompagnement clair, de l’installation jusqu’au suivi quotidien.</p></div>
+          <div><span>01</span><h3 data-i18n="advantages.oneTitle">Vision en temps réel</h3><p data-i18n="advantages.oneText">Suivez les véhicules, missions et alertes sans perdre de temps.</p></div>
+          <div><span>02</span><h3 data-i18n="advantages.twoTitle">Économies mesurables</h3><p data-i18n="advantages.twoText">Réduisez le carburant, les détours et l’usure de votre flotte.</p></div>
+          <div><span>03</span><h3 data-i18n="advantages.threeTitle">Support de proximité</h3><p data-i18n="advantages.threeText">Un accompagnement clair, de l’installation jusqu’au suivi quotidien.</p></div>
         </div>
       </div>
     </section>
@@ -151,87 +125,55 @@
     <section class="contact-section" id="contact">
       <div class="container contact-grid">
         <div>
-          <span class="eyebrow eyebrow-light">Contact</span>
-          <h2>Prêt à connecter votre flotte ?</h2>
-          <p>Envoyez votre demande. Nous vous répondrons avec une solution adaptée à votre activité.</p>
+          <span class="eyebrow eyebrow-light" data-i18n="contact.eyebrow">Contact</span>
+          <h2 data-i18n="contact.title">Prêt à connecter votre flotte ?</h2>
+          <p data-i18n="contact.text">Envoyez votre demande. Nous vous répondrons avec une solution adaptée à votre activité.</p>
           <div class="contact-info">
-            <p><strong>Téléphone :</strong> +212 661 425 744</p>
-            <p><strong>E-mail :</strong> iot.nexus.contact@gmail.com</p>
-            <p><strong>Adresse :</strong> B307, Technopol 1, Agadir Bay – Founty, Agadir 80000, Maroc</p>
+            <p><strong data-i18n="contact.phone">Téléphone :</strong> +212 661 425 744</p>
+            <p><strong data-i18n="contact.email">E-mail :</strong> iot.nexus.contact@gmail.com</p>
+            <p><strong data-i18n="contact.address">Adresse :</strong> <span data-i18n="contact.addressValue">B307, Technopol 1, Agadir Bay – Founty, Agadir 80000, Maroc</span></p>
           </div>
         </div>
 
-        <form class="contact-form"
-              id="contactForm"
-              action="https://formsubmit.co/iot.nexus.contact@gmail.com"
-              method="POST">
-          <input type="hidden" name="_subject" value="Nouvelle demande de devis — Nexus Solutions">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/iot.nexus.contact@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nouvelle demande de devis — Nexus Solutions" id="formSubject">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-
-          <label>Nom complet
-            <input type="text" name="Nom" placeholder="Votre nom" required>
-          </label>
-          <label>Entreprise
-            <input type="text" name="Entreprise" placeholder="Nom de l’entreprise">
-          </label>
-          <label>Téléphone
-            <input type="tel" name="Téléphone" placeholder="+212 ..." required>
-          </label>
-          <label>E-mail
-            <input type="email" name="email" placeholder="vous@entreprise.com" required>
-          </label>
-          <label class="full">Votre besoin
-            <textarea name="Message" rows="4" placeholder="Nombre de véhicules, secteur, fonctionnalités recherchées..." required></textarea>
-          </label>
-          <button class="button full" type="submit">Demander un devis</button>
-          <small class="full">Votre demande sera envoyée directement à iot.nexus.contact@gmail.com.</small>
+          <label><span data-i18n="form.name">Nom complet</span><input type="text" name="Nom" placeholder="Votre nom" required data-i18n-attr="placeholder:form.namePlaceholder"></label>
+          <label><span data-i18n="form.company">Entreprise</span><input type="text" name="Entreprise" placeholder="Nom de l’entreprise" data-i18n-attr="placeholder:form.companyPlaceholder"></label>
+          <label><span data-i18n="form.phone">Téléphone</span><input type="tel" name="Téléphone" placeholder="+212 ..." required></label>
+          <label><span data-i18n="form.email">E-mail</span><input type="email" name="email" placeholder="vous@entreprise.com" required data-i18n-attr="placeholder:form.emailPlaceholder"></label>
+          <label class="full"><span data-i18n="form.need">Votre besoin</span><textarea name="Message" rows="4" placeholder="Nombre de véhicules, secteur, fonctionnalités recherchées..." required data-i18n-attr="placeholder:form.needPlaceholder"></textarea></label>
+          <button class="button full" type="submit" data-i18n="form.submit">Demander un devis</button>
+          <small class="full" data-i18n="form.note">Votre demande sera envoyée directement à iot.nexus.contact@gmail.com.</small>
         </form>
       </div>
     </section>
 
-    <section class="map-section" aria-label="Localisation de Nexus Solutions">
+    <section class="map-section" aria-label="Localisation de Nexus Solutions" data-i18n-attr="aria-label:map.ariaLabel">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">Notre adresse</span>
-          <h2>Retrouvez-nous à Agadir Bay – Founty</h2>
-          <p>B307, Technopol 1, Agadir Bay – Founty, Agadir 80000, Maroc</p>
+          <span class="eyebrow" data-i18n="map.eyebrow">Notre adresse</span>
+          <h2 data-i18n="map.title">Retrouvez-nous à Agadir Bay – Founty</h2>
+          <p data-i18n="contact.addressValue">B307, Technopol 1, Agadir Bay – Founty, Agadir 80000, Maroc</p>
         </div>
         <div class="map-embed">
-          <iframe
-            title="Localisation Nexus Solutions"
-            src="https://www.google.com/maps?q=B307%20Technopol%201%20Agadir%20Bay%20Founty%20Agadir%20Maroc&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen>
-          </iframe>
+          <iframe title="Localisation Nexus Solutions" src="https://www.google.com/maps?q=B307%20Technopol%201%20Agadir%20Bay%20Founty%20Agadir%20Maroc&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen data-i18n-attr="title:map.iframeTitle"></iframe>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>
     <div class="container footer-grid">
       <img src="assets/nexus-logo.svg" alt="Nexus Solutions" />
       <p>GPS • IoT • Fleet Management</p>
-      <p>© 2026 Nexus Solutions. Tous droits réservés.</p>
+      <p data-i18n="footer.copy">© 2026 Nexus Solutions. Tous droits réservés.</p>
     </div>
   </footer>
 
-
-  <a class="whatsapp-float"
-     href="https://wa.me/212661425744?text=Bonjour%20Nexus%20Solutions%2C%20je%20souhaite%20obtenir%20plus%20d%E2%80%99informations."
-     target="_blank"
-     rel="noopener"
-     aria-label="Contacter Nexus Solutions sur WhatsApp">
-    <span>WhatsApp</span>
-  </a>
-
+  <a class="whatsapp-float" id="whatsappLink" href="https://wa.me/212661425744?text=Bonjour%20Nexus%20Solutions%2C%20je%20souhaite%20obtenir%20plus%20d%E2%80%99informations." target="_blank" rel="noopener" aria-label="Contacter Nexus Solutions sur WhatsApp" data-i18n-attr="aria-label:whatsapp.ariaLabel"><span>WhatsApp</span></a>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
