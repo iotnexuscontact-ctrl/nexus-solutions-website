@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=5.0.0">
+  <link rel="stylesheet" href="styles.css?v=5.1.0">
 </head>
 <body>
   <div class="topbar">
@@ -58,7 +58,7 @@
         <div class="hero-copy reveal">
           <div class="eyebrow"><span></span><span data-i18n="hero_badge">Fleet Intelligence • GPS • IoT</span></div>
           <h1 data-i18n="hero_title">Pilotez votre flotte avec une vision claire et des décisions plus rapides.</h1>
-          <p data-i18n="hero_text">Nexus Solutions transforme les données de votre flotte en performance, sécurité et maîtrise des coûts — en temps réel, partout au Maroc et à l'étranger.</p>
+          <p data-i18n="hero_text">Nexus Solutions transforme les données de vos véhicules en performance, sécurité et maîtrise des coûts — en temps réel, partout au Maroc.</p>
           <div class="hero-actions">
             <a class="btn btn-primary btn-lg" href="#contact" data-i18n="demo">Demander une démonstration</a>
             <a class="btn btn-ghost btn-lg" href="https://wa.me/212661425744" target="_blank" rel="noopener" data-i18n="whatsapp">Parler sur WhatsApp</a>
@@ -129,7 +129,14 @@
 
     <section class="section sectors-section" id="sectors">
       <div class="container"><div class="section-heading light reveal"><div><span class="kicker" data-i18n="sectors_kicker">Secteurs</span><h2 data-i18n="sectors_title">Une technologie adaptée à chaque métier.</h2></div><p data-i18n="sectors_intro">Des configurations conçues autour de vos contraintes opérationnelles.</p></div>
-        <div class="sector-grid"><article class="sector-card reveal"><b>01</b><h3 data-i18n="sec1">Transport & logistique</h3><p data-i18n="sec1_text">Suivi des délais, itinéraires, carburant et conducteurs.</p></article><article class="sector-card reveal delay-1"><b>02</b><h3 data-i18n="sec2">BTP & engins</h3><p data-i18n="sec2_text">Heures moteur, utilisation, sécurité et maintenance.</p></article><article class="sector-card reveal delay-2"><b>03</b><h3 data-i18n="sec3">Agriculture</h3><p data-i18n="sec3_text">Contrôle des équipements, zones et activités terrain.</p></article><article class="sector-card reveal"><b>04</b><h3 data-i18n="sec4">Location automobile</h3><p data-i18n="sec4_text">Protection du parc, alertes et suivi des contrats.</p></article><article class="sector-card reveal delay-1"><b>05</b><h3 data-i18n="sec5">Distribution</h3><p data-i18n="sec5_text">Tournées, livraisons et qualité de service.</p></article><article class="sector-card reveal delay-2"><b>06</b><h3 data-i18n="sec6">Collectivités</h3><p data-i18n="sec6_text">Pilotage transparent des véhicules et services publics.</p></article></div>
+        <div class="sector-grid">
+          <article class="sector-card reveal" style="--sector-image:url('assets/sectors/transport.webp')"><div class="sector-top"><b>01</b><span class="sector-icon" aria-hidden="true">🚚</span></div><div class="sector-content"><h3 data-i18n="sec1">Transport & logistique</h3><p data-i18n="sec1_text">Suivi des délais, itinéraires, carburant et conducteurs.</p></div></article>
+          <article class="sector-card reveal delay-1" style="--sector-image:url('assets/sectors/btp.webp')"><div class="sector-top"><b>02</b><span class="sector-icon" aria-hidden="true">🏗️</span></div><div class="sector-content"><h3 data-i18n="sec2">BTP & engins</h3><p data-i18n="sec2_text">Heures moteur, utilisation, sécurité et maintenance.</p></div></article>
+          <article class="sector-card reveal delay-2" style="--sector-image:url('assets/sectors/agriculture.webp')"><div class="sector-top"><b>03</b><span class="sector-icon" aria-hidden="true">🌱</span></div><div class="sector-content"><h3 data-i18n="sec3">Agriculture</h3><p data-i18n="sec3_text">Contrôle des équipements, zones et activités terrain.</p></div></article>
+          <article class="sector-card reveal" style="--sector-image:url('assets/sectors/location.webp')"><div class="sector-top"><b>04</b><span class="sector-icon" aria-hidden="true">🚗</span></div><div class="sector-content"><h3 data-i18n="sec4">Location automobile</h3><p data-i18n="sec4_text">Protection du parc, alertes et suivi des contrats.</p></div></article>
+          <article class="sector-card reveal delay-1" style="--sector-image:url('assets/sectors/distribution.webp')"><div class="sector-top"><b>05</b><span class="sector-icon" aria-hidden="true">📦</span></div><div class="sector-content"><h3 data-i18n="sec5">Distribution</h3><p data-i18n="sec5_text">Tournées, livraisons et qualité de service.</p></div></article>
+          <article class="sector-card reveal delay-2" style="--sector-image:url('assets/sectors/maritime.webp')"><div class="sector-top"><b>06</b><span class="sector-icon" aria-hidden="true">⛴️</span></div><div class="sector-content"><h3 data-i18n="sec6">Maritime</h3><p data-i18n="sec6_text">Suivi des navires de pêche, consommation de carburant, sécurité et opérations en mer.</p></div></article>
+        </div>
       </div>
     </section>
 
@@ -149,6 +156,6 @@
   <footer><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="#home"><img src="assets/nexus-logo.svg" alt=""><span><strong>NEXUS</strong><small>SOLUTIONS</small></span></a><p data-i18n="footer_text">Solutions intelligentes de géolocalisation, gestion de flotte et IoT.</p></div><div><h4 data-i18n="footer_nav">Navigation</h4><a href="#services" data-i18n="nav_services">Services</a><a href="#platform" data-i18n="nav_platform">Plateforme Nexus</a><a href="#products" data-i18n="nav_products">Produits</a></div><div><h4 data-i18n="footer_contact">Contact</h4><a href="tel:+212661425744">+212 661 425 744</a><a href="mailto:iot.nexus.contact@gmail.com">iot.nexus.contact@gmail.com</a><span>Agadir, Maroc</span></div><div><h4 data-i18n="footer_action">Démarrer</h4><a class="btn btn-primary" href="#contact" data-i18n="quote">Demander un devis</a></div></div><div class="container footer-bottom"><span>© 2026 Nexus Solutions. Tous droits réservés.</span><span>Fleet Management • GPS • IoT</span></div></footer>
 
   <a class="whatsapp-float" href="https://wa.me/212661425744" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
-  <script src="script.js?v=5.0.0"></script>
+  <script src="script.js?v=5.1.0"></script>
 </body>
 </html>
